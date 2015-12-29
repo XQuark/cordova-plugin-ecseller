@@ -7,6 +7,8 @@
 //
 
 #import <Cordova/CDV.h>
+
+#import <Foundation/Foundation.h>
 #import "ECSeller/ECSeller.h"
 
 enum  CDVWechatSharingType {
