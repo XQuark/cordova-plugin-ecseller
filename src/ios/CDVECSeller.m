@@ -22,7 +22,7 @@
 
 - (void)isWXAppInstalled:(CDVInvokedUrlCommand *)command
 {
-    CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:[WXApi isWXAppInstalled]];
+    CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:YES];
     
     [self.commandDelegate sendPluginResult:commandResult callbackId:command.callbackId];
 }
