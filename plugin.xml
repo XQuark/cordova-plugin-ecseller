@@ -67,10 +67,7 @@
         <header-file src="src/ios/CDVECSeller.h" />
         <source-file src="src/ios/CDVECSeller.m" />
 
-        <!-- Wechat Official -->
-        <header-file src="src/ios/libs/WeChatSDK_1.6.1/WXApi.h" />
-        <header-file src="src/ios/libs/WeChatSDK_1.6.1/WXApiObject.h" />
-        <source-file src="src/ios/libs/WeChatSDK_1.6.1/libWeChatSDK.a" framework="true" />
+        <!-- ECSeller Framework -->
         <source-file src="src/ios/libs/ECSeller.framework" framework="true" />
 
         <!-- Other required frameworks -->
