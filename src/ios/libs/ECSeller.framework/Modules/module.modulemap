@@ -1,6 +1,0 @@
-framework module ECSeller {
-  umbrella header "ECSeller.h"
-
-  export *
-  module * { export * }
-}
