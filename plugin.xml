@@ -3,15 +3,15 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="xu.li.cordova.wechat"
-    version="0.9.3">
+    id="ecmoho.cordova.ecseller"
+    version="0.0.1">
 
     <name>ECSeller</name>
     <description>A cordova plugin, ECSeller native module</description>
     <license>MIT</license>
     <keywords>cordova,ecmoho</keywords>
-    <repo>https://github.com/xu-li/cordova-plugin-wechat.git</repo>
-    <issue>https://github.com/xu-li/cordova-plugin-wechat/issues</issue>
+    <repo>https://github.com/XQuark/cordova-plugin-ecseller.git</repo>
+    <issue>https://github.com/XQuark/cordova-plugin-ecseller/issues</issue>
 
     <!-- add this to your config.xml -->
     <!-- <preference name="WECHATAPPID" value="YOUR_WECHAT_APP_ID_HERE" /> -->
