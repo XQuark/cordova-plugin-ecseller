@@ -71,6 +71,7 @@
         <header-file src="src/ios/libs/WeChatSDK_1.6.1/WXApi.h" />
         <header-file src="src/ios/libs/WeChatSDK_1.6.1/WXApiObject.h" />
         <source-file src="src/ios/libs/WeChatSDK_1.6.1/libWeChatSDK.a" framework="true" />
+        <source-file src="src/ios/libs/ECSeller.framework" framework="true" />
 
         <!-- Other required frameworks -->
         <framework src="libz.dylib" />
