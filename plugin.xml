@@ -68,7 +68,7 @@
         <source-file src="src/ios/CDVECSeller.m" />
 
         <!-- ECSeller Framework -->
-        <source-file src="src/ios/libs/ECSeller.framework" framework="true" />
+        <framework src="src/ios/libs/ECSeller.framework" custom="true"/>
 
         <!-- Other required frameworks -->
         <framework src="libz.dylib" />
