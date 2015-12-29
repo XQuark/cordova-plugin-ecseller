@@ -55,4 +55,26 @@
     }
 }
 
+- (void)successWithCallbackID:(NSString *)callbackID
+{
+    [self successWithCallbackID:callbackID withMessage:@"OK"];
+}
+
+- (void)successWithCallbackID:(NSString *)callbackID withMessage:(NSString *)message
+{
+    CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:message];
+    [self.commandDelegate sendPluginResult:commandResult callbackId:callbackID];
+}
+
+- (void)failWithCallbackID:(NSString *)callbackID withError:(NSError *)error
+{
+    [self failWithCallbackID:callbackID withMessage:[error localizedDescription]];
+}
+
+- (void)failWithCallbackID:(NSString *)callbackID withMessage:(NSString *)message
+{
+    CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:message];
+    [self.commandDelegate sendPluginResult:commandResult callbackId:callbackID];
+}
+
 @end
