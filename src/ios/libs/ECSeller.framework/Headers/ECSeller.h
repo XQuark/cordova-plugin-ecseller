@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char ECSellerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ECSeller/PublicHeader.h>
 
-#import <ImageUpload/ImageUploader.h>
+#import <ECSeller/ImageUploader.h>
 
