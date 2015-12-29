@@ -8,6 +8,10 @@
 		<data>
 		t95z5xLHmMZzl26UMzbhPCeFk4w=
 		</data>
+		<key>Headers/ImageUploader.h</key>
+		<data>
+		DabbRl+nu7rLrQYmhpVdB0bOrVY=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		yOmGW6RYip/M8c4LwTSOVS/efjo=
@@ -38,6 +42,10 @@
 		<key>Headers/ECSeller.h</key>
 		<data>
 		t95z5xLHmMZzl26UMzbhPCeFk4w=
+		</data>
+		<key>Headers/ImageUploader.h</key>
+		<data>
+		DabbRl+nu7rLrQYmhpVdB0bOrVY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
