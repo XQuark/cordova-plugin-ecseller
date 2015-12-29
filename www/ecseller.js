@@ -18,7 +18,7 @@ module.exports = {
     },
 
     isInstalled: function (onSuccess, onError) {
-        exec(onSuccess, onError, "Wechat", "isWXAppInstalled", []);
+        exec(onSuccess, onError, "ECSeller", "isWXAppInstalled", []);
     },
 
     /**
@@ -46,54 +46,6 @@ module.exports = {
      * </code>
      */
     share: function (message, onSuccess, onError) {
-        exec(onSuccess, onError, "Wechat", "share", [message]);
-    },
-
-    /**
-     * Sending an auth request to Wechat
-     *
-     * @example
-     * <code>
-     * Wechat.auth(function (response) { alert(response.code); });
-     * </code>
-     */
-    auth: function (scope, state, onSuccess, onError) {
-        if (typeof scope == "function") {
-            // Wechat.auth(function () { alert("Success"); });
-            // Wechat.auth(function () { alert("Success"); }, function (error) { alert(error); });
-            return exec(scope, state, "Wechat", "sendAuthRequest");
-        }
-
-        if (typeof state == "function") {
-            // Wechat.auth("snsapi_userinfo", function () { alert("Success"); });
-            // Wechat.auth("snsapi_userinfo", function () { alert("Success"); }, function (error) { alert(error); });
-            return exec(state, onSuccess, "Wechat", "sendAuthRequest", [scope]);
-        }
-
-        return exec(onSuccess, onError, "Wechat", "sendAuthRequest", [scope, state]);
-    },
-
-    /**
-     * Send a payment request
-     *
-     * @link https://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=9_1
-     * @example
-     * <code>
-     * var params = {
-     *     mch_id: '10000100', // merchant id
-     *     prepay_id: 'wx201411101639507cbf6ffd8b0779950874', // prepay id returned from server
-     *     nonce: '1add1a30ac87aa2db72f57a2375d8fec', // nonce string returned from server
-     *     timestamp: '1439531364', // timestamp
-     *     sign: '0CB01533B8C1EF103065174F50BCA001', // signed string
-     * };
-     * Wechat.sendPaymentRequest(params, function () {
-     *     alert("Success");
-     * }, function (reason) {
-     *     alert("Failed: " + reason);
-     * });
-     * </code>
-     */
-    sendPaymentRequest: function (params, onSuccess, onError) {
-        exec(onSuccess, onError, "Wechat", "sendPaymentRequest", [params]);
+        exec(onSuccess, onError, "ECSeller", "share", [message]);
     }
 };

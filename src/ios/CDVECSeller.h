@@ -1,14 +1,13 @@
 //
 //  CDVWechat.h
-//  cordova-plugin-wechat
+//  cordova-plugin-ecseller
 //
-//  Created by xu.li on 12/23/13.
+//  Created by uzstudio on 12/23/13.
 //
 //
 
 #import <Cordova/CDV.h>
-#import "WXApi.h"
-#import "WXApiObject.h"
+#import "ECSeller.h"
 
 enum  CDVWechatSharingType {
     CDVWXSharingTypeApp = 1,
@@ -20,14 +19,12 @@ enum  CDVWechatSharingType {
     CDVWXSharingTypeWebPage
 };
 
-@interface CDVWechat:CDVPlugin <WXApiDelegate>
+@interface CDVECSeller:CDVPlugin <WXApiDelegate>
 
 @property (nonatomic, strong) NSString *currentCallbackId;
 @property (nonatomic, strong) NSString *wechatAppId;
 
 - (void)isWXAppInstalled:(CDVInvokedUrlCommand *)command;
 - (void)share:(CDVInvokedUrlCommand *)command;
-- (void)sendAuthRequest:(CDVInvokedUrlCommand *)command;
-- (void)sendPaymentRequest:(CDVInvokedUrlCommand *)command;
 
 @end
