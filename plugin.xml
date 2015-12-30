@@ -42,7 +42,7 @@
         <header-file src="src/ios/libs/ECSellerMod.h" />
         <source-file src="src/ios/libs/libECSellerMod.a" framework="true" />
         <source-file src="src/ios/libs/libASIHTTPRequest.a" framework="true" />
-        <source-file src="src/ios/libs/libPods.a" framework="true" />
+        <!--<source-file src="src/ios/libs/libPods.a" framework="true" />-->
         <source-file src="src/ios/libs/libReachability.a" framework="true" />
         <source-file src="src/ios/libs/libSBJson4.a" framework="true" />
 
