@@ -48,6 +48,7 @@
 
         <!-- Other required frameworks -->
         <framework src="libz.dylib" />
+        <framework src="libxml2.dylib" />
         <framework src="libsqlite3.0.dylib" />
         <framework src="CoreTelephony.framework" />
         <framework src="SystemConfiguration.framework" />
