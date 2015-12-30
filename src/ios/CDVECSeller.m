@@ -29,6 +29,9 @@
 
 - (void)share:(CDVInvokedUrlCommand *)command
 {
+    ECSellerMod * mod = [[ECSellerMod alloc] init];
+    [mod uploadImage:@""];
+    
     // check arguments
     NSDictionary *params = [command.arguments objectAtIndex:0];
     if (!params)
